@@ -1,0 +1,27 @@
+Rafael: 
+
+promises - Explique o que é uma promises:
+this e funcao bind - Em qual contexto o this pode variar ? O que é a função bind ? Em qual contexto o this não varia ?
+closures - Explique o que são o closures ?
+
+Qual a saída?
+
+const x = 'Global';
+
+function fora() {
+    const x = 'Local';
+    function dentro() {
+        return x;
+    }
+    return dentro;
+}
+
+const minhaFuncao = fora();
+
+console.log(minhaFuncao());
+
+For of    - Explique a diferença entre a o for in e o for of
+                                
+HTTP - Explique em qual contexto de web api os códigos HTTP poderiam ser usados para retornos ao usuário
+WebPack - Qual a função do WebPack ?
+                                - Quais os sistemas de módulo que o WebPack utiliza?

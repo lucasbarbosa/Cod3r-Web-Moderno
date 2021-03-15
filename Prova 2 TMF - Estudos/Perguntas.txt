@@ -1,0 +1,62 @@
+Map - Qual o resultado da saída abaixo:
+------------------------------------------------
+
+const nums = [2, 4, 5, 8, 13]
+
+const soma9 = e => e + 9
+const triplo = e => e * 3
+const valorMonetario = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
+
+resultado = nums.map(soma9).map(triplo).map(valorMonetario)
+console.log(resultado)
+
+
+Filter - Qual o resultado da saída abaixo:
+------------------------------------------------
+
+const produtos = [
+    { nome: 'Notebook', preco: 2499, fragil: true },
+    { nome: 'iPad Pro', preco: 4199, fragil: true },
+    { nome: 'Copo de Vidro', preco: 12.49, fragil: true },
+    { nome: 'Copo de Plástico', preco: 18.99, fragil: false }
+]
+
+const caro = produto => produto.preco >= 500
+const fragil = produto => produto.fragil
+
+console.log(produtos.filter(caro).filter(fragil))
+
+
+Reduce - Qual o resultado da saída abaixo:
+------------------------------------------------
+
+const soma = (total, valor) => total + valor
+const nums = [3, 7, 9, 13]
+console.log(nums.reduce(soma, 21))
+
+
+Defina o que é template strings.
+------------------------------------------------
+
+
+Template Strings - Qual o resultado das saídas abaixo:
+------------------------------------------------
+
+const nome = 'Fulano'
+const concatenacao = 'Olá ' + nome + '!'
+const template = `
+    Olá
+    ${nome}!`
+console.log(concatenacao, template)
+
+------------------------------------------------
+
+var a = '10'
+var b = 5
+console.log(`Soma: ${a + b}`)
+console.log(`Divisão: $(a / b)`)
+
+
+Qual a diferença entre Call e Apply?
+------------------------------------------------
+

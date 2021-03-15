@@ -1,0 +1,187 @@
+Map - Qual o resultado da sa�da abaixo:
+------------------------------------------------
+
+const nums = [2, 4, 5, 8, 13]
+
+const soma9 = e => e + 9
+const triplo = e => e * 3
+const valorMonetario = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
+
+resultado = nums.map(soma9).map(triplo).map(valorMonetario)
+console.log(resultado)
+
+
+Filter - Qual o resultado da sa�da abaixo:
+------------------------------------------------
+
+const produtos = [
+    { nome: 'Notebook', preco: 2499, fragil: true },
+    { nome: 'iPad Pro', preco: 4199, fragil: true },
+    { nome: 'Copo de Vidro', preco: 12.49, fragil: true },
+    { nome: 'Copo de Pl�stico', preco: 18.99, fragil: false }
+]
+
+const caro = produto => produto.preco >= 500
+const fragil = produto => produto.fragil
+
+console.log(produtos.filter(caro).filter(fragil))
+
+
+Reduce - Qual o resultado da sa�da abaixo:
+------------------------------------------------
+
+const soma = (total, valor) => total + valor
+const nums = [3, 7, 9, 13]
+console.log(nums.reduce(soma, 21))
+
+
+Defina o que � template strings.
+------------------------------------------------
+
+� um recurso do ES que permite executar express�es (interpola��o) e quebra de linha na mesma declara��o, deixando o c�digo mais limpo.
+
+
+Template Strings - Qual o resultado das sa�das abaixo:
+------------------------------------------------
+
+const nome = 'Fulano'
+const concatenacao = 'Ol� ' + nome + '!'
+const template = `
+    Ol�
+    ${nome}!`
+console.log(concatenacao, template)
+
+------------------------------------------------
+
+var a = '10'
+var b = 5
+console.log(`Soma: ${a + b}`)
+
+console.log(`Divis�o: $(a / b)`)
+
+
+
+
+
+Rafael: 
+
+promises - Explique o que � uma promises:
+this e funcao bind - Em qual contexto o this pode variar ? O que � a fun��o bind ? Em qual contexto o this n�o varia ?
+closures - Explique o que s�o o closures ?
+
+Qual a sa�da?
+
+const x = 'Global';
+
+function fora() {
+    const x = 'Local';
+    function dentro() {
+        return x;
+    }
+    return dentro;
+}
+
+const minhaFuncao = fora();
+
+console.log(minhaFuncao());
+
+For of    - Explique a diferen�a entre a o for in e o for of
+                                
+HTTP - Explique em qual contexto de web api os c�digos HTTP poderiam ser usados para retornos ao usu�rio
+WebPack - Qual a fun��o do WebPack ?
+                                - Quais os sistemas de m�dulo que o WebPack utiliza?
+
+
+
+
+
+
+Finetti
+
+// Funcao Call
+
+
+// Funcao Arrow
+// 1) Transforme as fun��es em fun��o arrow:
+
+function Soma (a, b) {
+    return a + b
+}
+console.log(Soma(2, 2))
+
+function ImprimirTeste() {
+    console.log(this === module.exports)
+}
+ImprimirTeste()
+
+function ImprimeNovaPessoa(nome, idade, sexo) {
+    var pessoa = {
+        nome,
+        idade,
+        sexo
+    }
+    console.log(pessoa)
+}
+ImprimeNovaPessoa('Lucas', 23, 'Masculino')
+
+// Destructuring
+// 1) Aplique Destructuring nos seguintes objetos:
+
+const pessoa = {
+    nome: 'Lucas',
+    idade: 23,
+    departamento: {
+        nome: 'TI - Dev',
+        descricao: 'Desenvolvimento',
+        lider: {
+            nome: 'Cassio',
+            idade: 35
+        }
+    }
+}
+
+// 2) Pegue o valor 6 utilizando Destructuring
+const numeros = [[, 8, 8], [9, 6, 8]]
+
+// 3) Explique a diferen�a entre os dois Destructuring
+const pessoa = {
+    nome: 'Lucas',
+    idade: 23,
+    sexo: 'Masculino'
+}
+
+const { nome, ...rest } = pessoa
+const { ...rest, nome } = pessoa
+
+// Imperativo x Declarativo
+// 1) Explique qual a diferen�a de imperativo x declarativo.
+
+
+// HTTP
+// 1) O que � HTTP e cite os protocolos que ele necessita.
+
+// 2) Explique as seguinte categorias de Status HTTP:
+// 1XX: 
+// 2XX: 
+// 3XX: 
+// 4XX: 
+// 5XX: 
+
+// 3) Cite 4 m�todos HTTP e explique para que serve.
+
+// 4) Explique o significado dos Status HTTP seguintes:
+// 100:
+// 200:
+// 201:
+// 204:
+// 302:
+// 400:
+// 401:
+// 403:
+// 404:
+// 500:
+// 502:
+
+
+// WebPack
+// 1) Defina WebPack.

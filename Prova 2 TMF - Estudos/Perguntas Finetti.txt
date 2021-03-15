@@ -1,0 +1,89 @@
+Galera, segue minhas perguntas
+
+// Funcao Call
+
+
+// Funcao Arrow
+// 1) Transforme as funções em função arrow:
+
+function Soma (a, b) {
+    return a + b
+}
+console.log(Soma(2, 2))
+
+function ImprimirTeste() {
+    console.log(this === module.exports)
+}
+ImprimirTeste()
+
+function ImprimeNovaPessoa(nome, idade, sexo) {
+    var pessoa = {
+        nome,
+        idade,
+        sexo
+    }
+    console.log(pessoa)
+}
+ImprimeNovaPessoa('Lucas', 23, 'Masculino')
+
+// Destructuring
+// 1) Aplique Destructuring nos seguintes objetos:
+
+const pessoa = {
+    nome: 'Lucas',
+    idade: 23,
+    departamento: {
+        nome: 'TI - Dev',
+        descricao: 'Desenvolvimento',
+        lider: {
+            nome: 'Cassio',
+            idade: 35
+        }
+    }
+}
+
+// 2) Pegue o valor 6 utilizando Destructuring
+const numeros = [[, 8, 8], [9, 6, 8]]
+
+// 3) Explique a diferença entre os dois Destructuring
+const pessoa = {
+    nome: 'Lucas',
+    idade: 23,
+    sexo: 'Masculino'
+}
+
+const { nome, ...rest } = pessoa
+const { ...rest, nome } = pessoa
+
+// Imperativo x Declarativo
+// 1) Explique qual a diferença de imperativo x declarativo.
+
+
+// HTTP
+// 1) O que é HTTP e cite os protocolos que ele necessita.
+
+// 2) Explique as seguinte categorias de Status HTTP:
+// 1XX: 
+// 2XX: 
+// 3XX: 
+// 4XX: 
+// 5XX: 
+
+// 3) Cite 4 métodos HTTP e explique para que serve.
+
+// 4) Explique o significado dos Status HTTP seguintes:
+// 100:
+// 200:
+// 201:
+// 204:
+// 302:
+// 400:
+// 401:
+// 403:
+// 404:
+// 500:
+// 502:
+
+
+// WebPack
+// 1) Defina WebPack.

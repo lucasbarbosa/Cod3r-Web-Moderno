@@ -1,0 +1,84 @@
+20
+
+Template String
+
+-- Permite quebra de linhas, espaço, tab, já a concatenção não;
+-- Interpolar, converte a variável dentro do próprio texto;
+-- Suporta expressões matemáticas como texto, sem realiza-las, para realizar qualquer expressão matemática a mesma deve estar dentro do ${}
+-- Tudo que estiver entre {} ele vai tentar Interpolar; 
+-- É possível chamar uma função dentro dos {};
+
+40
+
+Desctructing
+
+-- Operador de desestruturação, ele tira da estrutura alguma coisa, ex: objeto, array sendo estrutura e o Desctructing tira algum valor de dentro destas estruturas;
+// Tire de dentro do objeto os valores realizando assim a desestruturação do objeto {}
+// Realizando destructuring e renomeando as variáveis
+// Realizando destructuring de uma propriedade que não existe dentro do objeto, por padrão o js retornará undefined
+// Realizando destructuring de um objeto aninhado e estabelecendo valor padrão caso não exista a propriedade dentro do objeto
+
+50
+
+Tratamento de Erro
+
+150
+
+For Of
+
+67
+
+This e funcao Bind
+
+// this serve para referenciar o objeto atual daquela execução
+// this pode variar dependendo de quem chama a função
+// in arrow function o this não varia nunca, um dos motivos por se criar arrow function
+
+73
+
+Funcao call
+
+69
+
+Funcoes Arrow
+
+79
+
+Closures
+
+85
+
+Call & Apply
+
+-- Uma faunção dentro do js é um tipo
+-- duas formas diferentes de chamar uma função em js (call e Apply)
+-- a diferença entre eles é a forma que você passa os parametros na chamada dos métodos
+
+111
+
+map/Filter/Reduce
+
+-- Map ele transforma um array inicial em um novo array através da iteração que ele faz via callback
+-- Filter ele filtra os dados de um array resultando em novo array com os dados filtrados
+-- reduce ele recebe um acumulador e um valor inicial que é o indice de um array e interage com cada item do indice do array
+
+116
+
+Imperativo vs Declarativo
+
+151
+
+Promises
+
+157
+
+Protocolo HTTP
+
+Secao 16
+
+WebPack
+
+// ajuda na automatização do build do projeto
+// completamente baseado em sistema de módulos
+    // commos.js no qual o node é baseado
+    // padrão ECMA Script, import e export
